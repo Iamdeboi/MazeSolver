@@ -5,7 +5,7 @@ import sys
 def main():
     num_rows = 12
     num_cols = 16
-    margin = 0
+    margin = 50
     screen_x = 800
     screen_y = 600
     cell_size_x = (screen_x - 2 * margin) / num_cols

@@ -133,7 +133,7 @@ class Maze:
         if (
             i > 0
             and not self._cells[i][j].has_left_wall
-            and not self._cells[i - 1][j - 1].visited
+            and not self._cells[i - 1][j].visited
         ):
             self._cells[i][j].draw_move(self._cells[i-1][j])
             if self._solve_r(i-1, j):

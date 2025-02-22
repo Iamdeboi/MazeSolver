@@ -13,13 +13,13 @@ class Cell:
         self._y2 = None
         self._win = win
     
-    def draw(self, x1, x2, y1, y2):
+    def draw(self, x1, y1, x2, y2):
         if self._win is None:
             return
-        self._x1 = x1 #leftmost x value of the cell
-        self._x2 = x2 #rightmost x value of the cell
-        self._y1 = y1 #top y valueof the cell
-        self._y2 = y2 #bottom y value of the cell
+        self._x1 = x1
+        self._x2 = x2
+        self._y1 = y1
+        self._y2 = y2
         if self.has_left_wall:
             line = Line(Point(x1, y1), Point(x1, y2))
             self._win.draw_line(line)
